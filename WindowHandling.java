@@ -15,7 +15,7 @@ public class WindowHandling {
 		System.setProperty("webdriver.chrome.driver","./Driver01/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		
-		driver.get("https://letcode.in/windows");
+		driver.get("https://www.w3schools.com/");
 		driver.manage().window().maximize();
 		
 		String windowhandle = driver.getWindowHandle();
@@ -24,7 +24,7 @@ public class WindowHandling {
 		System.out.println("First Window - "+windowhandle);
 		System.out.println("First Window - "+s);
 		
-		driver.findElement(By.xpath("//button[@id='home']")).click();
+		driver.findElement(By.xpath(""//a[@class='user-anonymous tnb-certificates-btn w3-bar-item w3-button w3-right w3-white ga-top ga-top-certificates']")).click();
 		
 		Set<String>windowhandles = driver.getWindowHandles();
 		System.out.println(windowhandles);
