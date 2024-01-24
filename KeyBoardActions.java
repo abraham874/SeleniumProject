@@ -12,11 +12,11 @@ public class KeyBoardActions {
 		System.setProperty("webdriver.chrome.driver","./Driver01/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 
-		driver.get("https://www.flipkart.com/");
+		driver.get("https://www.amazon.in/");
 		driver.manage().window().maximize();
 		
 		Actions a = new Actions(driver);
-		a.moveToElement(driver.findElement(By.xpath("//input[@name='q']"))).click().sendKeys("Iphone 15").build().perform();
+		a.moveToElement(driver.findElement(By.xpath("//input[@id='twotabsearchtextbox']"))).click().sendKeys("Iphone 15").build().perform();
 		a.sendKeys(Keys.RETURN).build().perform();
 		
 
