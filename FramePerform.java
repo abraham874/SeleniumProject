@@ -20,6 +20,9 @@ public class FramePerform {
 		driver.switchTo().frame(1);
 		driver.findElement(By.xpath("//input[@name='email']")).sendKeys("akash@gmail.com");
 
+		//
+		driver.quit();
+
 	}
 
 }
